@@ -13,7 +13,7 @@ public class SearchTests {
     @Test
     void successfulSearchTest() {
         open("https://www.google.com/");
-        $("[name=q]").setValue("gitHub").pressEnter();
-        $("[id=search]").shouldHave(text("https://github.com/KirHolzer/qa_guru_HW2"));
+        $("[name=q]").setValue("vk").pressEnter();
+        $("[id=search]").shouldHave(text("https://vk.ru"));
     }
 }
